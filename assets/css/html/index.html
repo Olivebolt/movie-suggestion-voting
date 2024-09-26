@@ -1,0 +1,67 @@
+<!DOCTYPE html data-theme="dark">
+<html lang="en" class="theme-light">
+<head class="has-text-danger-dark">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Voting Website</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body class="has-background-info-light">
+    <div class="modal" id="finish-voting-modal">
+        <div class="modal-background"></div>
+        <div class="modal-card">
+          <header class="modal-card-head">
+            <p class="modal-card-title">WARNING</p>
+          </header>
+          <section class="modal-card-body">
+           <p> Are you sure you are finished voting?</p>
+          </section>
+
+          <footer class="modal-card-foot">
+            <div class="buttons">
+              <button class="button is-success" id="finish-voting-accept">YES</button>
+              <button class="button is-danger" id="finish-voting-deny">NO</button>
+            </div>
+          </footer>
+        </div>
+      </div>
+      
+    <header class="section is-primary">
+        
+        <button class="button has-background-warning-light"><span class="icon">
+            <i class="fa-solid fa-lightbulb"></i>
+          </span></button>
+
+        <h1 class="title">Movte</h1>
+    </header>
+
+    <section id="finished-voting" class="box section">
+        <h1 id="over" class="title">Movie voting is over</h1> 
+        <h2 id="winning" class="subtitle">The winning movie was: </h2> 
+        <h2 id="least-voted" class="subtitle"> The leasted voted movie was:</h2>
+        <button id="reset" class="button is-link is-soft"> Voting reset </button> 
+    </section>
+
+    <form class="section suggest-movie box" id="voting">
+        <h2 class="title">Suggest a Movie</h2>
+        <input class="input" type="text" id="movieName" placeholder="Enter movie name">
+        <input class="input" type="text" id="movieDescription" placeholder="Optionally enter movie description">
+        <button type ="button" id = "suggest" class="button is-link is-soft">Suggest</button> 
+        <button type= "button" id = "clear" class="button is-danger">Clear Movies</button>
+        <button type="button" id="finish-voting" class="button is-danger is-pulled-right"><strong>FINISH VOTING</strong></button>
+    </form>
+    <section class="section movie-list grid is-col-min-15">
+    </section>
+
+    
+    <footer class="footer has-background-info-light">
+        <div class="content has-text-centered">
+        <p> &copy;TM Movte.</p>
+        <p> Made with ❤️ by the brilliant minds of <a href="https://github.com/OccultParrot"> Thomas,</a> <a href="https://github.com/sabrinothman6495?tab=repositories"> Sabrin</a> & <a href="https://github.com/Olivebolt"> Oliver</a> </p>
+    </div>
+    </footer>
+    <script src="assets/js/script.js"></script> 
+    <script src="https://kit.fontawesome.com/9b0849a9f8.js" crossorigin="anonymous"></script>
+</body>
+</html>
